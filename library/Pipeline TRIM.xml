@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			   xmlns:prov="http://www.w3.org/ns/prov#"
+			   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+			   xmlns:pp="http://www.pennprovenance.net/provDefs/"
+			   xmlns:kimlab="http://kim.bio.upenn.edu/provDefs/"
+			   >
+
+    <!-- Definitions for TRIM module in pipeline. -->
+
+    <!-- ENTITY xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+	<prov:entity prov:id="kimlab:_dc2662c6-7934-3da3-b102-a0f34f95eb0f">
+		<prov:type xsi:type="xsd:QName">pp:File</prov:type>
+		<prov:type xsi:type="xsd:QName">kimlab:TrimContaminants</prov:type>
+		<foaf:name>contaminants.fa</foaf:name>
+		<pp:location>/lab/repo/resources/trim/</pp:location>
+		<!-- could include creation date, MD5, etc -->
+	</prov:entity>
+	
+    <!-- AGENT xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+	<prov:agent prov:id="kimlab:_5e76c0d1-e2d0-36bb-bd32-226d83e03440">
+		<prov:type>prov:SoftwareAgent</prov:type>
+		<foaf:name>trimReads.py</foaf:name>
+		<pp:version>0.6</pp:version>
+		<!-- could include location, MD5, etc -->
+	</prov:agent>
+	
+</prov:document>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			   xmlns:prov="http://www.w3.org/ns/prov#"
+			   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+			   xmlns:kimlab="http://kim.bio.upenn.edu/provDefs/"
+			   xmlns:kimlab-sequencing="http://kim.bio.upenn.edu/provDefs/sequencing#"
+			   >
+	
+    <!-- Definitions pertaining to sequencing and used by SequencingRun -->
+    
+    <!-- ENTITY xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+    <prov:entity prov:id="kimlab:_42030dd9-897b-34b5-982b-795413531837">
+		<prov:type xsi:type="xsd:QName">kimlab:Sequencer</prov:type>
+		<kimlab-sequencing:manufacturer>Illumina</kimlab-sequencing:manufacturer>
+		<kimlab-sequencing:model>HiSeq 2500</kimlab-sequencing:model>
+    </prov:entity>
+
+    <!-- AGENT xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+	
+    <prov:agent prov:id="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482" xsi:type="prov:Organization">
+		<foaf:name>FGC</foaf:name>
+    </prov:agent>
+    
+    <prov:agent prov:id="kimlab:_1422f0a4-2b86-360c-9a3c-8f5b86079cb2" xsi:type="prov:Organization">
+		<foaf:name>inHouse</foaf:name>
+    </prov:agent>
+    
+    <prov:agent prov:id="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9" xsi:type="prov:Person">
+		<foaf:name>J. Kim</foaf:name>
+    </prov:agent>
+    
+    <prov:agent prov:id="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32" xsi:type="prov:Person">
+		<foaf:name>J. Eberwine</foaf:name>
+    </prov:agent>
+
+</prov:document>

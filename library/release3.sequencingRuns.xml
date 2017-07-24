@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			   xmlns:prov="http://www.w3.org/ns/prov#"
+			   xmlns:kimlab="http://kim.bio.upenn.edu/provDefs/"
+			   xmlns:kimlab-sequencing="http://kim.bio.upenn.edu/provDefs/sequencing#"
+			   >
+
+  <prov:activity prov:id="kimlab:_34a7e3c6-4e10-448b-b40f-7da7cf12ef1b">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">229</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-06</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP60-63 &amp; BRP64-67</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.229
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_34a7e3c6-4e10-448b-b40f-7da7cf12ef1b"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_34a7e3c6-4e10-448b-b40f-7da7cf12ef1b"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1078</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_34a7e3c6-4e10-448b-b40f-7da7cf12ef1b"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_34a7e3c6-4e10-448b-b40f-7da7cf12ef1b"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_0d73524f-33e9-45dc-9916-aa4a2bfe8b10">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">228</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-29</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>CM512-545 &amp; BRP173-178</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.228
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_0d73524f-33e9-45dc-9916-aa4a2bfe8b10"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0d73524f-33e9-45dc-9916-aa4a2bfe8b10"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1101</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0d73524f-33e9-45dc-9916-aa4a2bfe8b10"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0d73524f-33e9-45dc-9916-aa4a2bfe8b10"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_0be44668-69ac-4d7b-ba1c-5b111d7135d5">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">265</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-07-27</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>C57/Bl10 and mdx satellite cells</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.265
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_0be44668-69ac-4d7b-ba1c-5b111d7135d5"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0be44668-69ac-4d7b-ba1c-5b111d7135d5"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1172</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0be44668-69ac-4d7b-ba1c-5b111d7135d5"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0be44668-69ac-4d7b-ba1c-5b111d7135d5"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_c59c74c8-38de-46f0-bc64-f870f7cf5b46">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">218</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-02-26</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP40-43 &amp; BRP129-131</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_c59c74c8-38de-46f0-bc64-f870f7cf5b46"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c59c74c8-38de-46f0-bc64-f870f7cf5b46"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>218</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c59c74c8-38de-46f0-bc64-f870f7cf5b46"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c59c74c8-38de-46f0-bc64-f870f7cf5b46"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_0d624f4b-9648-4c01-a927-d3836dcb321f">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">133</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2014-03-18</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Br41_CM145-147 &amp; Tiva test</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_0d624f4b-9648-4c01-a927-d3836dcb321f"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0d624f4b-9648-4c01-a927-d3836dcb321f"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id></kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0d624f4b-9648-4c01-a927-d3836dcb321f"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0d624f4b-9648-4c01-a927-d3836dcb321f"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_0b59d409-b4b7-43b8-aa09-6898986d473d">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">132</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2014-03-13</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>CM130-133_Br19 &amp; CM 1148-151</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_0b59d409-b4b7-43b8-aa09-6898986d473d"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0b59d409-b4b7-43b8-aa09-6898986d473d"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id></kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0b59d409-b4b7-43b8-aa09-6898986d473d"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_0b59d409-b4b7-43b8-aa09-6898986d473d"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_31619b40-544d-4b32-92eb-86857e567f08">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">131</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2014-03-11</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>YH227c_104_129 &amp; CM131-136_Br38</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_31619b40-544d-4b32-92eb-86857e567f08"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_31619b40-544d-4b32-92eb-86857e567f08"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id></kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_31619b40-544d-4b32-92eb-86857e567f08"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_31619b40-544d-4b32-92eb-86857e567f08"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_7b8c2263-a7c3-4d04-9416-9f94a687bb16">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">238</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-22</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP84-111 &amp; BRP163-167</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.238
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_7b8c2263-a7c3-4d04-9416-9f94a687bb16"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_7b8c2263-a7c3-4d04-9416-9f94a687bb16"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1093</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_7b8c2263-a7c3-4d04-9416-9f94a687bb16"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_7b8c2263-a7c3-4d04-9416-9f94a687bb16"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_80b86d0b-6d53-4606-aac8-857ad2eed9a8">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">275</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-08-03</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp316c-320c &amp; BRP406-417</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.275, test for illumina, 1 proven 0ercc sample in with 4 new ercc containing samples
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_80b86d0b-6d53-4606-aac8-857ad2eed9a8"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_80b86d0b-6d53-4606-aac8-857ad2eed9a8"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1187</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_80b86d0b-6d53-4606-aac8-857ad2eed9a8"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_80b86d0b-6d53-4606-aac8-857ad2eed9a8"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_b23d2648-fb03-468b-84e6-34be2ace0a00">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">276</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-09-22</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP371-375 &amp; PhiXCtrl2</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_b23d2648-fb03-468b-84e6-34be2ace0a00"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b23d2648-fb03-468b-84e6-34be2ace0a00"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1228</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b23d2648-fb03-468b-84e6-34be2ace0a00"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b23d2648-fb03-468b-84e6-34be2ace0a00"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">277</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-09-18</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp381-392 &amp; Brp412-422</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1225</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_7fb2d703-e793-4d70-a8dc-c6060b9acfc4">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">234</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-13</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP68-79 &amp; BRP117-127</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.234
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_7fb2d703-e793-4d70-a8dc-c6060b9acfc4"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_7fb2d703-e793-4d70-a8dc-c6060b9acfc4"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1092</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_7fb2d703-e793-4d70-a8dc-c6060b9acfc4"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_7fb2d703-e793-4d70-a8dc-c6060b9acfc4"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_e6f3ccfc-d0c5-452c-b746-14a4c95956ce">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">235</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-13</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP251-255 &amp; BRP261-264_161 </kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.235
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_e6f3ccfc-d0c5-452c-b746-14a4c95956ce"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_e6f3ccfc-d0c5-452c-b746-14a4c95956ce"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1083</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_e6f3ccfc-d0c5-452c-b746-14a4c95956ce"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_e6f3ccfc-d0c5-452c-b746-14a4c95956ce"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_b679c0a4-e47c-4e69-83bc-b54a013f67b8">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">236</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-13</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP256-260 &amp; TE-bandaid</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.236
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_b679c0a4-e47c-4e69-83bc-b54a013f67b8"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b679c0a4-e47c-4e69-83bc-b54a013f67b8"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1084</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b679c0a4-e47c-4e69-83bc-b54a013f67b8"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b679c0a4-e47c-4e69-83bc-b54a013f67b8"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_5e33e4e2-22cf-4064-82f4-634ef84e598a">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">237</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-16</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP88-116 &amp; BRU72-97</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.237
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_5e33e4e2-22cf-4064-82f4-634ef84e598a"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_5e33e4e2-22cf-4064-82f4-634ef84e598a"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1089</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_5e33e4e2-22cf-4064-82f4-634ef84e598a"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_5e33e4e2-22cf-4064-82f4-634ef84e598a"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_da903c8e-da72-4124-8937-269f300d8474">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">230</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-03-30</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BPR50-54 &amp; BRP55-59</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>230
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_da903c8e-da72-4124-8937-269f300d8474"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_da903c8e-da72-4124-8937-269f300d8474"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1070</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_da903c8e-da72-4124-8937-269f300d8474"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_da903c8e-da72-4124-8937-269f300d8474"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_d8ba7f76-f094-4348-89fe-f742dc75b055">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">231</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-06</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP153-156-cond2c &amp; BRP157-160-cond2d</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>231
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_d8ba7f76-f094-4348-89fe-f742dc75b055"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d8ba7f76-f094-4348-89fe-f742dc75b055"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1079</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d8ba7f76-f094-4348-89fe-f742dc75b055"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d8ba7f76-f094-4348-89fe-f742dc75b055"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_061ed1ba-5692-46fc-9936-467738b62b79">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">232</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-13</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP70-73 &amp; BRP74-77</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.232
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_061ed1ba-5692-46fc-9936-467738b62b79"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_061ed1ba-5692-46fc-9936-467738b62b79"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1088</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_061ed1ba-5692-46fc-9936-467738b62b79"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_061ed1ba-5692-46fc-9936-467738b62b79"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_86f21690-56ca-4d2d-863f-7141b7eb30f8">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">233</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-27</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>CM514-547 &amp; Sarah-expL</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>CM lane submitted on 3/30/2015
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_86f21690-56ca-4d2d-863f-7141b7eb30f8"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_86f21690-56ca-4d2d-863f-7141b7eb30f8"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1095</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_86f21690-56ca-4d2d-863f-7141b7eb30f8"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_86f21690-56ca-4d2d-863f-7141b7eb30f8"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_09e5decb-f727-4fa6-ab85-0104e53af520">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">251</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-06-09</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp293-297&amp;CM579-583 </kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.251
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_09e5decb-f727-4fa6-ab85-0104e53af520"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_09e5decb-f727-4fa6-ab85-0104e53af520"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1138</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_09e5decb-f727-4fa6-ab85-0104e53af520"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_09e5decb-f727-4fa6-ab85-0104e53af520"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_a297e122-9106-431d-8760-1938d7f17c2a">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">256</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-06-17</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp316-320 &amp; Brp326-330 </kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.256
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_a297e122-9106-431d-8760-1938d7f17c2a"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_a297e122-9106-431d-8760-1938d7f17c2a"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1144</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_a297e122-9106-431d-8760-1938d7f17c2a"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_a297e122-9106-431d-8760-1938d7f17c2a"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_1cefd193-9595-4cea-a344-8bc3344f36cb">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">264</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-07-10</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp233-237</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.264
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_1cefd193-9595-4cea-a344-8bc3344f36cb"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1cefd193-9595-4cea-a344-8bc3344f36cb"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1155</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1cefd193-9595-4cea-a344-8bc3344f36cb"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1cefd193-9595-4cea-a344-8bc3344f36cb"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_b651ed0c-9209-42dc-92c1-d372a1bd3199">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">281</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-09-02</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>ILMN pools 1-8</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina PE-401-4001, FC-401-4003</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.281, high-output run with v4 chemistry sequenced at Illumina
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_b651ed0c-9209-42dc-92c1-d372a1bd3199"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b651ed0c-9209-42dc-92c1-d372a1bd3199"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id></kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b651ed0c-9209-42dc-92c1-d372a1bd3199"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b651ed0c-9209-42dc-92c1-d372a1bd3199"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_baf63cf1-2e33-4574-8ada-bae0c20052c7">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">255</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-06-10</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>TISA &amp; CM584-588</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.255
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_baf63cf1-2e33-4574-8ada-bae0c20052c7"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_baf63cf1-2e33-4574-8ada-bae0c20052c7"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>255</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_baf63cf1-2e33-4574-8ada-bae0c20052c7"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_baf63cf1-2e33-4574-8ada-bae0c20052c7"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_b0b4baf2-4bbb-4513-8718-54b89e564a0d">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">244</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-05-26</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP278-282 &amp; BRP187-196</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.244
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_b0b4baf2-4bbb-4513-8718-54b89e564a0d"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b0b4baf2-4bbb-4513-8718-54b89e564a0d"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1119</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b0b4baf2-4bbb-4513-8718-54b89e564a0d"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_b0b4baf2-4bbb-4513-8718-54b89e564a0d"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_ac7d37d2-bb5c-44c5-a691-2436bb38076f">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">247</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-08-21</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>CM589-593 &amp; CM594-598</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_ac7d37d2-bb5c-44c5-a691-2436bb38076f"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ac7d37d2-bb5c-44c5-a691-2436bb38076f"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1200</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ac7d37d2-bb5c-44c5-a691-2436bb38076f"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ac7d37d2-bb5c-44c5-a691-2436bb38076f"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_209b8423-e4bc-48ac-adfc-452e5268c455">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">246</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-06-01</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP278-282 &amp; BRP187-196</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.246
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_209b8423-e4bc-48ac-adfc-452e5268c455"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_209b8423-e4bc-48ac-adfc-452e5268c455"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>O246</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_209b8423-e4bc-48ac-adfc-452e5268c455"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_209b8423-e4bc-48ac-adfc-452e5268c455"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_ae1f53da-860b-49dc-84da-586364bb2783">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">241</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-04-29</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP83-105 &amp; BRP106-177</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.241
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_ae1f53da-860b-49dc-84da-586364bb2783"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ae1f53da-860b-49dc-84da-586364bb2783"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1100</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ae1f53da-860b-49dc-84da-586364bb2783"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ae1f53da-860b-49dc-84da-586364bb2783"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_e41d954c-824c-4280-b8d8-69c29d5615e2">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">240</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-05-06</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP289-292 &amp; BRU80-81</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.240
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_e41d954c-824c-4280-b8d8-69c29d5615e2"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_e41d954c-824c-4280-b8d8-69c29d5615e2"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1107</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_e41d954c-824c-4280-b8d8-69c29d5615e2"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_e41d954c-824c-4280-b8d8-69c29d5615e2"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_c3860fde-2abf-44d6-958a-d6112d15d1b6">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">243</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-06-03</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP278-282</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">75</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">1</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>unknown</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.243. For sequencing, v1 reagents were used but unknown if mid or high output.
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_c3860fde-2abf-44d6-958a-d6112d15d1b6"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c3860fde-2abf-44d6-958a-d6112d15d1b6"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id></kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c3860fde-2abf-44d6-958a-d6112d15d1b6"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c3860fde-2abf-44d6-958a-d6112d15d1b6"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_6a305e22-7ce2-41f7-ada0-c51528ad0ab5">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">242</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-05-06</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP169-172 &amp; BRP80-107</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.242
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_6a305e22-7ce2-41f7-ada0-c51528ad0ab5"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_6a305e22-7ce2-41f7-ada0-c51528ad0ab5"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1108</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_6a305e22-7ce2-41f7-ada0-c51528ad0ab5"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_6a305e22-7ce2-41f7-ada0-c51528ad0ab5"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_79c8efdb-9c8f-4dfe-af75-d9feb4071490">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">278</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-08-19</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP238-240 &amp; BRP238b-240b</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.278
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_79c8efdb-9c8f-4dfe-af75-d9feb4071490"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_79c8efdb-9c8f-4dfe-af75-d9feb4071490"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1194</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_79c8efdb-9c8f-4dfe-af75-d9feb4071490"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_79c8efdb-9c8f-4dfe-af75-d9feb4071490"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_79c7d16f-077c-47b0-97f3-ef606c4b0d50">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">268</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-07-20</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRPrerun &amp; csc1-msc2</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.268
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_79c7d16f-077c-47b0-97f3-ef606c4b0d50"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_79c7d16f-077c-47b0-97f3-ef606c4b0d50"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1173</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_79c7d16f-077c-47b0-97f3-ef606c4b0d50"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_79c7d16f-077c-47b0-97f3-ef606c4b0d50"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_1ec768fd-0c85-4344-8e9f-64ab17d37b87">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">223</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-03-10</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>CM513-517 &amp; CM518-522</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.223
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_1ec768fd-0c85-4344-8e9f-64ab17d37b87"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1ec768fd-0c85-4344-8e9f-64ab17d37b87"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1053</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1ec768fd-0c85-4344-8e9f-64ab17d37b87"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1ec768fd-0c85-4344-8e9f-64ab17d37b87"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_1db6448e-260f-444e-879b-59cd92c573ac">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">221</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-03-06</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description> BPR44-48 &amp; BRP96-98</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>unknown</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>221
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_1db6448e-260f-444e-879b-59cd92c573ac"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1db6448e-260f-444e-879b-59cd92c573ac"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1052</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1db6448e-260f-444e-879b-59cd92c573ac"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_1db6448e-260f-444e-879b-59cd92c573ac"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_c5f6a2a9-609a-422e-a3f0-709f2dbcbaf2">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">274</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-08-14</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>BRP203-207</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.274
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_c5f6a2a9-609a-422e-a3f0-709f2dbcbaf2"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c5f6a2a9-609a-422e-a3f0-709f2dbcbaf2"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1190</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c5f6a2a9-609a-422e-a3f0-709f2dbcbaf2"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_c5f6a2a9-609a-422e-a3f0-709f2dbcbaf2"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_d1536def-ce91-40e2-84ed-88bbc1e00f4b">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">282</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-09-02</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>ILMN pools 9-16</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina PE-401-4001, FC-401-4003</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.282, high-output run with v4 chemistry sequenced at Illumina
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_d1536def-ce91-40e2-84ed-88bbc1e00f4b"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d1536def-ce91-40e2-84ed-88bbc1e00f4b"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id></kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d1536def-ce91-40e2-84ed-88bbc1e00f4b"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d1536def-ce91-40e2-84ed-88bbc1e00f4b"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_82e45154-9a89-4ffd-bdf6-ce68862714f2">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">271</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-07-24</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp336-356 &amp; Brp357-377</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.271
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_82e45154-9a89-4ffd-bdf6-ce68862714f2"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_82e45154-9a89-4ffd-bdf6-ce68862714f2"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1171</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_82e45154-9a89-4ffd-bdf6-ce68862714f2"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_82e45154-9a89-4ffd-bdf6-ce68862714f2"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_ee7d2bfc-785f-458e-b43c-b003fae4b898">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">272</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-08-14</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp311-331 &amp; Brp386-397</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.272
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_ee7d2bfc-785f-458e-b43c-b003fae4b898"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ee7d2bfc-785f-458e-b43c-b003fae4b898"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1189</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ee7d2bfc-785f-458e-b43c-b003fae4b898"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_ee7d2bfc-785f-458e-b43c-b003fae4b898"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_f6f1f40b-1724-4fc3-8879-56ec13ab45c2">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">267</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-08-21</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp229-232 &amp; BRP213-215</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4002, FC-402-4021</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>Suffered clip failure during clustering. E.267
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_f6f1f40b-1724-4fc3-8879-56ec13ab45c2"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_f6f1f40b-1724-4fc3-8879-56ec13ab45c2"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1199</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_f6f1f40b-1724-4fc3-8879-56ec13ab45c2"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_f6f1f40b-1724-4fc3-8879-56ec13ab45c2"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_d9bc2c35-ed56-452f-b3a3-aa159c74b000">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">252</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-06-12</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>CM666-675 &amp; BRP306-310</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>CASAVA v1.8.2</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.252
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_d9bc2c35-ed56-452f-b3a3-aa159c74b000"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d9bc2c35-ed56-452f-b3a3-aa159c74b000"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1170</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d9bc2c35-ed56-452f-b3a3-aa159c74b000"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_d9bc2c35-ed56-452f-b3a3-aa159c74b000"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:activity prov:id="kimlab:_a6d50d71-8ec9-4a46-b184-56da3656b1b0">
+    <prov:type xsi:type="xsd:QName">kimlab:SequencingRun</prov:type>
+    <kimlab-sequencing:run-number xsi:type="xsd:unsignedInt">266</kimlab-sequencing:run-number>
+    <kimlab-sequencing:sequencingDate xsi:type="xsd:date">2015-07-20</kimlab-sequencing:sequencingDate>
+    <kimlab-sequencing:description>Brp146-150 &amp; Brp133-136</kimlab-sequencing:description>
+    <kimlab-sequencing:kit>Illumina CT-402-4001, PE-402-4001, FC-402-4001</kimlab-sequencing:kit>
+    <kimlab-sequencing:read-length xsi:type="xsd:unsignedInt">100</kimlab-sequencing:read-length>
+    <kimlab-sequencing:is-single-end xsi:type="xsd:boolean">0</kimlab-sequencing:is-single-end>
+    <kimlab-sequencing:base-calling>bcl2fastq v1.8.4</kimlab-sequencing:base-calling>
+    <kimlab-sequencing:notes>E.266
+</kimlab-sequencing:notes>
+  </prov:activity>
+
+  <prov:used>
+    <prov:activity prov:ref="kimlab:_a6d50d71-8ec9-4a46-b184-56da3656b1b0"/>
+    <prov:entity prov:ref="kimlab:_42030dd9-897b-34b5-982b-795413531837"/>
+  </prov:used>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_a6d50d71-8ec9-4a46-b184-56da3656b1b0"/>
+    <prov:agent prov:ref="kimlab:_8f6555e4-0c93-39df-b77c-f017e09f9482"/>
+    <prov:role xsi:type="xsd:QName">kimlab:SequencingFacility</prov:role>
+    <kimlab-sequencing:facility-id>1164</kimlab-sequencing:facility-id>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_a6d50d71-8ec9-4a46-b184-56da3656b1b0"/>
+    <prov:agent prov:ref="kimlab:_b7cd5422-4615-33df-875f-58e9563120c9"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+  <prov:wasAssociatedWith>
+    <prov:activity prov:ref="kimlab:_a6d50d71-8ec9-4a46-b184-56da3656b1b0"/>
+    <prov:agent prov:ref="kimlab:_ec4b35ea-6282-3267-a216-1f10b4650c32"/>
+    <prov:role xsi:type="xsd:QName">kimlab:PrincipalInvestigator</prov:role>
+  </prov:wasAssociatedWith>
+
+</prov:document>

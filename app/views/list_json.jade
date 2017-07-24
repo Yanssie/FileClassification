@@ -1,0 +1,28 @@
+extend layout
+block navbarcontent
+    nav.nav.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') Explore
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='/') Home
+          li
+            a(href='#') Setting
+          li
+            a(href='#', class='text-center new-account') Sign Out
+block content
+    h3
+      | #{title}
+    p
+      table.table.table-hover
+        thead
+          tr: th Files
+        tbody
+          - for (var i = 0; i < rows.length; i++)
+            - var jsonFormatString = JSON.stringify(rows[i].data, undefined, 2)
+            tr
+              td=rows[i].name
+              td &nbsp;
+              td=jsonFormatString
+              td &nbsp;

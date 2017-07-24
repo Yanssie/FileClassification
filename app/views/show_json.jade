@@ -1,0 +1,23 @@
+extend layout
+block navbarcontent
+    nav.nav.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') Explore
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='/') Home
+          li
+            a(href='#') Setting
+          li
+            a(href='#', class='text-center new-account') Sign Out
+block content
+    h3
+      | #{title}
+    ul
+      li #{data}
+    form(method="get", action="upload_json", class="form-inline")
+          input(class="invisible_input", type="text", name="NAME", value=NAME)
+          input(type='Submit', value='Upload JSON', class="btn btn-success")
+    p
+      | #{success}

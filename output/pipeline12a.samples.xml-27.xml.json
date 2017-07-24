@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "name": "kimlab:_d25fc2c7-1027-4db2-af32-bf4808f7806c",
+            "group": 1,
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/sample#}species": "hg19.gencode18.100",
+                "{http://kim.bio.upenn.edu/provDefs/blast#}kmer": null
+            }
+        },
+        {
+            "name": "kimlab:_cbdd8158-6e79-4380-a774-849bb12914c9",
+            "group": 1,
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/trim#}minimum-length": "20",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}remove-N": "1",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}number-AT": "26",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}contaminants-file": "/lab/repo/resources/trim/contaminants.fa"
+            }
+        },
+        {
+            "name": "kimlab:_6755ffac-8468-46f3-8684-398bbbedf6d7",
+            "group": 1,
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/sample#}species": "hg19.gencode18.100"
+            }
+        },
+        {
+            "name": "kimlab:_76a760d8-831a-44d7-8ee8-6b0c5fb3d69a",
+            "group": 1,
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/htseq#}is-stranded": "1"
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "kimlab:_d25fc2c7-1027-4db2-af32-bf4808f7806c",
+            "target": "kimlab:_7fc03dfd-d223-4c57-82cc-c5ef380aece6",
+            "name": "linkto",
+            "weight": 1
+        },
+        {
+            "source": "kimlab:_cbdd8158-6e79-4380-a774-849bb12914c9",
+            "target": "kimlab:_7fc03dfd-d223-4c57-82cc-c5ef380aece6",
+            "name": "linkto",
+            "weight": 1
+        },
+        {
+            "source": "kimlab:_6755ffac-8468-46f3-8684-398bbbedf6d7",
+            "target": "kimlab:_cbdd8158-6e79-4380-a774-849bb12914c9",
+            "name": "linkto",
+            "weight": 1
+        },
+        {
+            "source": "kimlab:_76a760d8-831a-44d7-8ee8-6b0c5fb3d69a",
+            "target": "kimlab:_6755ffac-8468-46f3-8684-398bbbedf6d7",
+            "name": "linkto",
+            "weight": 1
+        }
+    ]
+}

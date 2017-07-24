@@ -1,0 +1,87 @@
+{
+    "links": [
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_6578eaee-e317-447b-b664-aeed247c8040",
+            "source": "kimlab:_f9f95619-c87e-4d98-b9b7-8be83644b2fd"
+        },
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_f9f95619-c87e-4d98-b9b7-8be83644b2fd",
+            "source": "kimlab:_2a61c10f-6525-411d-82a8-f64c97c7eda9"
+        },
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a",
+            "source": "kimlab:_6578eaee-e317-447b-b664-aeed247c8040"
+        },
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a",
+            "source": "kimlab:_496fde57-1614-4f5c-9726-332f1a0bce2c"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "kimlab:_496fde57-1614-4f5c-9726-332f1a0bce2c",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/blast#}kmer": "TATAGTGAGT",
+                "{http://kim.bio.upenn.edu/provDefs/blast#}number-reads": "5000",
+                "{http://kim.bio.upenn.edu/provDefs/sample#}species": "hg38.gencode21.stranded",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}read-length": "100"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_6578eaee-e317-447b-b664-aeed247c8040",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/trim#}remove-N": "0",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}contaminants-file": "/lab/repo/resources/trim/contaminants.fa",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}number-AT": "26",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}phred-threshold": "53",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}minimum-length": "20",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}is-single-end": "0"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_f9f95619-c87e-4d98-b9b7-8be83644b2fd",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}is-single-end": "0",
+                "{http://kim.bio.upenn.edu/provDefs/sample#}species": "hg38.gencode21.stranded",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}read-length": "100"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_2a61c10f-6525-411d-82a8-f64c97c7eda9",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/verse#}id-attribute": "gene_name",
+                "{http://kim.bio.upenn.edu/provDefs/verse#}include-lines-sines": "1",
+                "{http://kim.bio.upenn.edu/provDefs/verse#}include-intergenic": "1",
+                "{http://kim.bio.upenn.edu/provDefs/verse#}include-introns": "1",
+                "{http://kim.bio.upenn.edu/provDefs/verse#}is-stranded": "1"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_81dcbf79-4686-4f59-b0bb-1eea0ee3856a",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}notes": "\n",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}base-calling": "bcl2fastq v1.8.4",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}sequencingDate": "2015-09-18",
+                "{http://www.w3.org/ns/prov#}type": "kimlab:SequencingRun",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}description": "Brp381-392 & Brp412-422",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}is-single-end": "0",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}run-number": "277",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}kit": "Illumina CT-402-4001, PE-402-4002, FC-402-4021",
+                "{http://kim.bio.upenn.edu/provDefs/sequencing#}read-length": "100"
+            },
+            "group": 1
+        }
+    ]
+}

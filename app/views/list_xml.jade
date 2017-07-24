@@ -1,0 +1,36 @@
+extend layout
+script(src='../public/javascripts/list_xml_js.js')
+block navbarcontent
+    nav.nav.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='#') Explore
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='/') Home
+          li
+            a(href='#') Setting
+          li
+            a(href='#', class='text-center new-account') Sign Out
+block content
+    h3
+      | #{title}
+    p
+      table.table.table-hover#xml_table
+        thead
+          tr: th Files
+        tbody
+          - for (var i = 0; i < rows.length; i++)
+            tr
+              td=rows[i].name
+              td &nbsp;
+              td=rows[i].data
+              td &nbsp;
+    p
+      form(method="get", action="show_json", class="form-inline")
+          select(name="NAME")
+            - for result in names
+              option #{result}
+          br
+          br
+          input(type='Submit', value='SPLIT', class="btn btn-success")

@@ -1,0 +1,62 @@
+{
+    "links": [
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_d9446874-bfd7-4e22-aed9-76d4189a193c",
+            "source": "kimlab:_d7edf2a3-ac5b-4705-893f-e8b9b74a3e8a"
+        },
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_d7edf2a3-ac5b-4705-893f-e8b9b74a3e8a",
+            "source": "kimlab:_b5a44720-84bc-4932-9476-8db852c49d22"
+        },
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_53919f76-a7a3-41ea-b9e6-73141f387b06",
+            "source": "kimlab:_6fd3b546-6970-4c5e-844d-fcfaa04eed48"
+        },
+        {
+            "weight": 1,
+            "name": "linkto",
+            "target": "kimlab:_53919f76-a7a3-41ea-b9e6-73141f387b06",
+            "source": "kimlab:_d9446874-bfd7-4e22-aed9-76d4189a193c"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "kimlab:_6fd3b546-6970-4c5e-844d-fcfaa04eed48",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/blast#}kmer": null,
+                "{http://kim.bio.upenn.edu/provDefs/sample#}species": "hg19.gencode18.100"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_d9446874-bfd7-4e22-aed9-76d4189a193c",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/trim#}remove-N": "1",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}minimum-length": "20",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}contaminants-file": "/home/jshall/lab/repo/resources/trim/contaminants.fa",
+                "{http://kim.bio.upenn.edu/provDefs/trim#}number-AT": "26"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_d7edf2a3-ac5b-4705-893f-e8b9b74a3e8a",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/sample#}species": "hg19.gencode18.100"
+            },
+            "group": 1
+        },
+        {
+            "name": "kimlab:_b5a44720-84bc-4932-9476-8db852c49d22",
+            "attributes": {
+                "{http://kim.bio.upenn.edu/provDefs/htseq#}is-stranded": "1"
+            },
+            "group": 1
+        }
+    ]
+}

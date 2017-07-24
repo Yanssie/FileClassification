@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			   xmlns:prov="http://www.w3.org/ns/prov#"
+			   xmlns:pp="http://www.pennprovenance.net/provDefs/"
+			   xmlns:kimlab="http://kim.bio.upenn.edu/provDefs/"
+			   >
+
+    <!-- Overall definitions for pipeline. -->
+
+    <!-- ENTITY xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+	<prov:entity prov:id="kimlab:_2b8c4199-01ac-33ae-9332-dad7d96bd293">
+		<prov:type>prov:Plan</prov:type>
+		<pp:version>2.0</pp:version>
+		<!-- could include creation date, list of modules/librarires, etc -->
+	</prov:entity>
+	
+	<prov:entity prov:id="kimlab:_3898a801-c550-4c6f-b633-5c2c0f06be8f">
+		<prov:type>prov:Plan</prov:type>
+		<pp:version>1.0</pp:version>
+		<!-- could include creation date, list of modules/librarires, etc -->
+	</prov:entity>
+	
+</prov:document>
+
