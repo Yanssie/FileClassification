@@ -1,0 +1,50 @@
+extend layout
+
+block navbarcontent
+
+block content
+  .row
+    .col-md-8.col-md-offset-2
+        .panel.panel-default
+          .panel-body
+            .pull-right
+              form(method='post', action='/upload')
+                .btn.btn-lg.btn-warning.cluster-btn(type='Submit') Cluster
+              
+              .btn-group
+                //button.btn.btn-success.btn-filter(type='button', data-target='cluster1') Cluster1
+                //button.btn.btn-warning.btn-filter(type='button', data-target='cluster2') Cluster2
+                //button.btn.btn-danger.btn-filter(type='button', data-target='cluster3') Cluster3
+            .table-container
+              table.table.table-filter
+                thead
+                  tr: th &nbsp;
+                      th File Name
+                      th Original Prov. Graph
+                      th Activity Graph
+                tbody
+                  - for (var i = 0; i < rows.length; i++)
+                    - var name = rows[i].name
+                    - var xml_data = rows[i].xml_data
+                    - var json_data = JSON.stringify(rows[i].json_data)
+                    tr
+                      td
+                        .ckbox
+                          input#checkbox1(type='checkbox')
+                      td=name
+                      td
+                        //.media
+                        a.pull-left(href='/show_xml/' + rows[i].name) XML
+                        //a.pull-left.xml_header(href='#xmlModal',data-toggle="modal") XML
+                        //+modal(names.pop(), "xmlModal")
+                        //  p
+                        //    | #{xml_data}
+                      td
+                        //.media
+                        a.pull-left(href='/show_json/' + rows[i].name) JSON
+                        //a.pull-left.json_header(href='#jsonModal',data-toggle="modal") JSON
+                        //+modal(name, "jsonModal")
+                        //  p
+                        //    | #{json_data}
+  //script(src="/../javascripts/list_file.js")
+

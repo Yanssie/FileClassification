@@ -12,9 +12,11 @@ var PythonShell = require('python-shell');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var upload = require('./routes/upload');
+var list = require('./routes/list');
 var list_xml = require('./routes/list_xml');
 var list_json = require('./routes/list_json');
 var show_json = require('./routes/show_json');
+var show_xml = require('./routes/show_xml');
 var upload_json = require('./routes/upload_json');
 
 var app = express();
@@ -38,9 +40,11 @@ app.use('/', index);
 app.use('/users', users);
 
 app.get('/upload', upload.do_work);
+app.get('/list', list.do_work);
 app.get('/list_xml', list_xml.do_work);
 app.get('/list_json', list_json.do_work);
-app.get('/show_json', show_json.do_work);
+app.get('/show_json/:name', show_json.do_work);
+app.get('/show_xml/:name', show_xml.do_work);
 app.get('/upload_json', upload_json.do_work);
 
 const pool = require('./models/db');
@@ -61,7 +65,8 @@ app.post('/upload', upload_multer.any(), function (request, res, next) {
   var data_all = [];
   for (j = request.files.length - 1; j >= 0; j--) {
     // upload datas into database
-      fs.readFile(request.files[j].path, 'utf8', function (err, data) {
+      var fs_path = request.files[j].path;
+      fs.readFile(fs_path, 'utf8', function (err, data) {
           if (err) throw err;
           // console.log(title_all.pop());
           data_all.push(data);
@@ -85,24 +90,29 @@ app.post('/upload', upload_multer.any(), function (request, res, next) {
               /** extract activities to json files **/
               // extract each xml from database and convert to json
               extract_json(title);
+              // delete origin file
+              if (fs.existsSync(fs_path)) {
+                fs.unlink(fs_path, function (err) {
+                  if (err) throw err;
+                  console.log('successfully deleted fs file! ' + fs_path);
+                }); 
+              }
+              
             }
 
           });
 
 
         });
-      fs.unlink(request.files[j].path, function (err) {
-        if (err) throw err;
-        console.log('successfully deleted fs file!');
-      }); 
 
   }
-                
-  res.render('upload_file.jade', {
-                success: "Upload successfully!",
-                title: title_all,
-                size: size_all
-              });
+  // res.send({redirect: '/list'});
+  // res.render('upload');        
+  // res.render('upload_file.jade', {
+  //               success: "Upload successfully!",
+  //               title: title_all,
+  //               size: size_all
+  //             });
   
   
 })
@@ -114,31 +124,31 @@ function extract_json(title) {
         if(err) {
           return console.error('error running query', err);
         } else {
-          console.log("[RESULT] " + result.rows[0].data);
+          // console.log("[RESULT] " + result.rows[0].data);
           // write xml files to uploads folder
           fs.writeFile(__dirname + "/uploads/" + name + ".xml", result.rows[0].data, function(err) {
                   if(err) {
                    return console.log(err);
                   }
                   console.log("The xml file was downloaded!");
-              
-              }); 
-
-          // run python script
+                  // run python script
                 var options = {
                   mode: 'text',
                   scriptPath: __dirname + '/script/',
-                  args: [__dirname+'/../library', __dirname+'/uploads']
+                  args: [__dirname+'/library', __dirname+'/uploads', name]
                 };
 
                 PythonShell.run('newParser.py', options, function (err, results) {
                     if (err) throw err;
                     // results is an array consisting of messages collected during execution
                     console.log('results: %j', results);
-                    console.log("finished writing json file");
+                    console.log("finished writing json file!");
                     /** upload json file **/
                     upload_json_file(name);
                 });
+              
+              }); 
+
         }
       });
 }
@@ -166,6 +176,7 @@ function upload_json_file(name) {
 }
 // delete xml and json files located in local uploads files
 function delete_file(NAME) {
+
     // delete file
     var xml_path = __dirname + "/uploads/" + NAME + ".xml";
     fs.unlink(xml_path, function (err) {

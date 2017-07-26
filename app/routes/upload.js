@@ -1,9 +1,5 @@
 
 
-
-
-
-
 const pool = require('../models/db');
 formidable = require('formidable');
 

@@ -403,12 +403,12 @@ totalSequence = add_xml_to_dict(librarydir + "/pipeline12a.sequencingRuns.xml", 
 #json_to_file((dict_to_json(test_dict)), "updated/split/release1.samples.xml-1-mod.json")
 upload_dir = sys.argv[2]
 for parent,dirnames,filenames in os.walk(upload_dir):  
-    print(filenames)
+#    print(filenames)
     for filename in filenames:
         if(filename.split('.').pop() == "xml"):
-            
-            act_dict = extract_activities(xml_to_dict(upload_dir + "/" +filename), all_schema)
+            if (sys.argv[3] in filename):
+                act_dict = extract_activities(xml_to_dict(upload_dir + "/" +filename), all_schema)
         #        print(dict_to_json(act_dict))
-            json_to_file(dict_to_json(act_dict), upload_dir + "/" + filename + ".json")
+                json_to_file(dict_to_json(act_dict), upload_dir + "/" + filename + ".json")
 #print (output)
 #json_to_file(output, "fake.json")

@@ -1,5 +1,9 @@
-$('#upload-input').on('change', function(){
+$('.fileUpload').on('click', function (){
+    $('.progress-bar').text('0%');
+    $('.progress-bar').width('0%');
+});
 
+$('#upload-input').on('change', function(){
   var files = $(this).get(0).files;
 
   if (files.length > 0){
@@ -43,6 +47,7 @@ $('#upload-input').on('change', function(){
             // once the upload reaches 100%, set the progress bar text to done
             if (percentComplete === 100) {
               $('.progress-bar').html('Done');
+              window.location = '/list';
             }
 
           }

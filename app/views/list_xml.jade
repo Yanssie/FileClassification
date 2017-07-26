@@ -1,17 +1,15 @@
 extend layout
 script(src='../public/javascripts/list_xml_js.js')
 block navbarcontent
-    nav.nav.navbar-inverse.navbar-fixed-top
+    nav
       .container-fluid
-        .navbar-header
-          a.navbar-brand(href='#') Explore
         ul.nav.navbar-nav.navbar-right
           li
-            a(href='/') Home
+            a(href='/upload') HOME &nbsp &nbsp
           li
-            a(href='#') Setting
+            a(href='/list_xml') FILES &nbsp &nbsp
           li
-            a(href='#', class='text-center new-account') Sign Out
+            a(href='/list_json') RESULT
 block content
     h3
       | #{title}
@@ -26,11 +24,4 @@ block content
               td &nbsp;
               td=rows[i].data
               td &nbsp;
-    p
-      form(method="get", action="show_json", class="form-inline")
-          select(name="NAME")
-            - for result in names
-              option #{result}
-          br
-          br
-          input(type='Submit', value='SPLIT', class="btn btn-success")
+

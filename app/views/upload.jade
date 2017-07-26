@@ -1,19 +1,23 @@
 
 extend layout
-block content
-  .container
-    .panel.panel-default
-      .panel-body 
-        span.glyphicon.glyphicon-cloud-upload
-        h2 File Uploader
-        .progress
-          .progress-bar(role='progressbar')
-        form(method='post', action='/upload', enctype='multipart/form-data')
-          input#upload-input(type='file', name='upload-input', accept='text/xml', multiple="multiple")
-          button.btn.btn-lg.upload-btn(type='Submit') Upload File
-          //input(type='submit', value='Submit', class="upload-btn")
-        h4 #{error}
 
-script(src='https://code.jquery.com/jquery-2.2.0.min.js')
-script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
-script(src="/javascripts/main.js")
+block navbarcontent
+
+block content
+  .row
+    .container
+      .panel.panel-default
+        .panel-body 
+          span.glyphicon.glyphicon-cloud-upload
+          h2 XML File Uploader
+          .progress
+            .progress-bar(role='progressbar')
+          form(method='post', action='/upload', enctype='multipart/form-data')
+            .fileUpload.btn.btn-lg.btn-warning Upload Files
+              input#upload-input.inputfile(type='file', name='uploads[]', accept='text/xml', multiple="multiple")
+            button.btn.btn-lg.upload-btn(type='Submit') Upload File
+          h4 #{error}
+
+  script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+  script(src="/../javascripts/uploadFile.js")
