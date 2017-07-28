@@ -46,6 +46,7 @@ app.get('/list_json', list_json.do_work);
 app.get('/show_json/:name', show_json.do_work);
 app.get('/show_xml/:name', show_xml.do_work);
 app.get('/upload_json', upload_json.do_work);
+app.post('/list', list.do_work_post);
 
 const pool = require('./models/db');
 // handle the post request from /upload
@@ -84,7 +85,7 @@ app.post('/upload', upload_multer.any(), function (request, res, next) {
               if(err.code=='2200N') {
                 console.log('Invalid XML Content');
               }
-              return console.error('error running query', err);
+              return console.error('error running query', title, err);
             }else {
               console.log('successfully uploaded ' + title);
               /** extract activities to json files **/
@@ -167,7 +168,7 @@ function upload_json_file(name) {
                 return console.error('error running query', err);
             } else {
                 console.log("successfully uploaded json!")
-                delete_file(name);
+                // delete_file(name);
             }
 
         });

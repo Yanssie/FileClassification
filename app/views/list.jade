@@ -8,8 +8,10 @@ block content
         .panel.panel-default
           .panel-body
             .pull-right
-              form(method='post', action='/upload')
-                .btn.btn-lg.btn-warning.cluster-btn(type='Submit') Cluster
+              form(method='post', action='/list')
+                button(class='btn btn-warning btn-lg cluster-btn', type='submit') Cluster
+              //form(method='post', action='/list')
+              //  .btn.btn-lg.btn-warning.cluster-btn(type='Submit') Cluster
               
               .btn-group
                 //button.btn.btn-success.btn-filter(type='button', data-target='cluster1') Cluster1

@@ -11,16 +11,24 @@ import os
 import pandas as pd
 import numpy as np
 from sklearn import tree
-from sklearn.datasets import load_iris
-from sklearn.cross_validation import KFold
+#from sklearn.datasets import load_iris
+#from sklearn.cross_validation import KFold
+from sklearn.model_selection import KFold
 from sklearn import metrics
-import sklearn
 from sklearn.cluster import KMeans
 #from kmodes import kmodes
 import matplotlib.pyplot as plt
 import pandas as pd
 import sys
 #import newParser
+import warnings
+
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
 
 def read_json_file(filename):
     json_file = open(filename, "r")
@@ -182,42 +190,44 @@ def matchCluster(result_df):
 
 if __name__ == '__main__':
     print()
-#    print(json_to_dict(read_json_file('updated/split/release1.samples.xml-1.xml.json')))
-#    sample_dict_12a = json_to_dict(read_json_file('../../output/pipeline12a.samples.xml-1.xml.json'))
-#    sample_vector_12a = get_attrib_vector(get_node_attrib_dict(sample_dict_12a), 
-#                                      get_lexicon())
-                                      
- #  sample_dict_2 = json_to_dict(read_json_file('../../split/release2.samples.xml-1.xml.json'))
- #   sample_vector_2 = get_attrib_vector(get_node_attrib_dict(sample_dict_2), 
- #                                     get_lexicon())
-                                      
- #   sample_dict_3 = json_to_dict(read_json_file('../../split/release3.samples.xml-1.xml.json'))
- #   sample_vector_3 = get_attrib_vector(get_node_attrib_dict(sample_dict_3), 
- #                                     get_lexicon())                                     
-#    print(get_lexicon())
-#    print (sample_vector_12a)
-#    print (sample_vector_2)
-#    print (sample_vector_3)
-    
-#    nodes_lexicon_dict_12a = dict()
-#    nodes_inv_lexicon_dict_12a = dict()
-#    conn_mat_12a = get_connectivity_matrix(sample_dict_12a, nodes_lexicon_dict_12a, nodes_inv_lexicon_dict_12a)
-#    print(nodes_lexicon_dict_12a)
-#    print(conn_mat_12a)
-#    conn_mat_2 = get_connectivity_matrix(sample_dict_12a, nodes_lexicon_dict_12a, nodes_inv_lexicon_dict_12a)
-
+#==============================================================================
+# #    print(json_to_dict(read_json_file('updated/split/release1.samples.xml-1.xml.json')))
+#     sample_dict_12a = json_to_dict(read_json_file('updated/split/pipeline12a.samples.xml-1.xml.json'))
+#     sample_vector_12a = get_attrib_vector(get_node_attrib_dict(sample_dict_12a), 
+#                                       get_lexicon())
+#                                       
+#     sample_dict_2 = json_to_dict(read_json_file('updated/split/release2.samples.xml-1.xml.json'))
+#     sample_vector_2 = get_attrib_vector(get_node_attrib_dict(sample_dict_2), 
+#                                       get_lexicon())
+#                                       
+#     sample_dict_3 = json_to_dict(read_json_file('updated/split/release3.samples.xml-1.xml.json'))
+#     sample_vector_3 = get_attrib_vector(get_node_attrib_dict(sample_dict_3), 
+#                                       get_lexicon())                                     
+#     print(get_lexicon())
+#     print (sample_vector_12a)
+#     print (sample_vector_2)
+#     print (sample_vector_3)
+#     
+#     nodes_lexicon_dict_12a = dict()
+#     nodes_inv_lexicon_dict_12a = dict()
+#     conn_mat_12a = get_connectivity_matrix(sample_dict_12a, nodes_lexicon_dict_12a, nodes_inv_lexicon_dict_12a)
+# #    print(nodes_lexicon_dict_12a)
+# #    print(conn_mat_12a)
+#     conn_mat_2 = get_connectivity_matrix(sample_dict_12a, nodes_lexicon_dict_12a, nodes_inv_lexicon_dict_12a)
+# 
+#==============================================================================
     
 #    print(np.linalg.eig(conn_mat_12a))
 #    print(np.linalg.eig(conn_mat_2))
+#    rootdir = "../uploads"
     rootdir = sys.argv[1]
     samples_list = []
+    feature_names = []
     for parent,dirnames,filenames in os.walk(rootdir):  
-#        print (filenames)
         for filename in filenames:
 #            temp_sample_vector = []
             if((filename.split('.').pop() == "json")):
 #            & (filename.split('.')[0] == "pipeline12a")):#pipeline12a
-#                print(filename)
                 temp_sample_dict = json_to_dict(read_json_file(rootdir+'/'+filename))
                 temp_sample_vector = get_attrib_vector(get_node_attrib_dict(temp_sample_dict), 
                                       get_lexicon())
@@ -225,10 +235,11 @@ if __name__ == '__main__':
                 temp_sample_vector.append(1)
 #                print(temp_sample_vector)
                 samples_list.append(temp_sample_vector)
+                feature_names.append(filename)
                 
                 
-            elif((filename.split('.').pop() == "json")):
-#            & (filename.split('.')[0] == "release2")):#pipeline12a
+            elif((filename.split('.').pop() == "json") 
+            & (filename.split('.')[0] == "release2")):#pipeline12a
 #                print(filename)
                 temp_sample_dict = json_to_dict(read_json_file(rootdir+'/'+filename))
                 temp_sample_vector = get_attrib_vector(get_node_attrib_dict(temp_sample_dict), 
@@ -237,9 +248,10 @@ if __name__ == '__main__':
                 temp_sample_vector.append(2)
 #                print(temp_sample_vector)
                 samples_list.append(temp_sample_vector)
-                
-            elif((filename.split('.').pop() == "json")): 
-#            & (filename.split('.')[0] == "release3")):#pipeline12a
+                feature_names.append(filename)
+#                
+            elif((filename.split('.').pop() == "json") 
+            & (filename.split('.')[0] == "release3")):#pipeline12a
 #                print(filename)
                 temp_sample_dict = json_to_dict(read_json_file(rootdir+'/'+filename))
                 temp_sample_vector = get_attrib_vector(get_node_attrib_dict(temp_sample_dict), 
@@ -248,106 +260,114 @@ if __name__ == '__main__':
                 temp_sample_vector.append(3)
 #                print(temp_sample_vector)
                 samples_list.append(temp_sample_vector)
+                feature_names.append(filename)
     
-    print(samples_list)
     sample_data = np.array(samples_list)
+    print(feature_names)
+    print(samples_list)
+#    print(sample_data)
     x_num, y_num = sample_data.shape
-    
+       
     X=sample_data[:,0:-1]
     y = sample_data[:,-1]
-    
-    kf = KFold(x_num, n_folds=10, shuffle=True)
+#       
+#    kf = KFold(x_num, n_folds=10, shuffle=True)
+    kf = KFold(10, shuffle=True)
+#    print(kf)
 #    kf.get_n_splits(X)
     i = 0
-    for train_index, test_index in kf:
-#        print("TRAIN:", train_index, "TEST:", test_index)
-        X_train, X_test = X[train_index], X[test_index]
-        y_train, y_test = y[train_index], y[test_index]
-#        if (i == 2):
-        dt = tree.DecisionTreeClassifier(max_depth=2)
-        dt.fit(X_train, y_train)
-        
-        y_pred = dt.predict(X_test)
-#        print(metrics.accuracy_score(y_test, y_pred))
-        
-#        kmeans = KMeans(n_clusters = 4, random_state=0).fit(X_train)
-#        y_pred = kmeans.predict(X_test)
-#        print(metrics.accuracy_score(y_test, y_pred))
-        i += 1
-        
+    for train_index, test_index in kf.split(X):
+   #        print("TRAIN:", train_index, "TEST:", test_index)
+           X_train, X_test = X[train_index], X[test_index]
+           y_train, y_test = y[train_index], y[test_index]
+   #        if (i == 2):
+           dt = tree.DecisionTreeClassifier(max_depth=2)
+           dt.fit(X_train, y_train)
+           
+           y_pred = dt.predict(X_test)
+   #        print(metrics.accuracy_score(y_test, y_pred))
+           
+   #        kmeans = KMeans(n_clusters = 4, random_state=0).fit(X_train)
+   #        y_pred = kmeans.predict(X_test)
+#           print(metrics.accuracy_score(y_test, y_pred))
+           i += 1
+#           
     accuracy_list = []
     param_list = range(1, 6)
     for cluster_num in param_list: 
-        fold_accu = []
-        i = 0
-        for train_index, test_index in kf:
-    #        print("TRAIN:", train_index, "TEST:", test_index)
-            X_train, X_test = X[train_index], X[test_index]
-            y_train, y_test = y[train_index], y[test_index]
-   
-            km = KMeans(n_clusters = cluster_num, init='k-means++').fit(X)
-            y_pred = km.predict(X_test)
-            
-            X_transform = km.transform(X_test)
-            
-#            print(y_test)
-#            print(y_pred)
-#            print("score: ", km.score(X_test))
-#            print("distortion: ",km.inertia_)
-#            km = kmodes.KModes(n_clusters = cluster_num, init = 'Huang', n_init = 5, verbose = 1)
-#            km.fit_predict(X)
-#            y_pred = km.predict(X_test)
-            this_accuracy = km.score(X_test)
-#            this_accuracy = km.inertia_
-            
-            fold_accu.append(this_accuracy)
-            i += 1
-#        print(cluster_num, np.mean(fold_accu))
-        accuracy_list.append(np.mean(fold_accu))
-        
-    print(accuracy_list)
-    
+           fold_accu = []
+           i = 0
+           for train_index, test_index in kf.split(X):
+       #        print("TRAIN:", train_index, "TEST:", test_index)
+               X_train, X_test = X[train_index], X[test_index]
+               y_train, y_test = y[train_index], y[test_index]
+      
+               km = KMeans(n_clusters = cluster_num, init='k-means++').fit(X)
+               y_pred = km.predict(X_test)
+               
+               X_transform = km.transform(X_test)
+               
+   #            print(y_test)
+   #            print(y_pred)
+   #            print("score: ", km.score(X_test))
+   #            print("distortion: ",km.inertia_)
+   #            km = kmodes.KModes(n_clusters = cluster_num, init = 'Huang', n_init = 5, verbose = 1)
+   #            km.fit_predict(X)
+   #            y_pred = km.predict(X_test)
+               this_accuracy = km.score(X_test)
+   #            this_accuracy = km.inertia_
+               
+               fold_accu.append(this_accuracy)
+               i += 1
+#           print(cluster_num, np.mean(fold_accu))
+           accuracy_list.append(np.mean(fold_accu))
+#           
+#    print(accuracy_list)
+       
     plt.figure(1)
     plt.plot(param_list, accuracy_list)     
-    
+       
     plt.savefig('cluster-accu.png')
-        
+           
     km = KMeans(n_clusters = 3, init='k-means++').fit(X)
     y_pred = km.predict(X)
-    
+       
     org_df = pd.DataFrame(y, columns=['y'])
     pred_df = pd.DataFrame(y_pred, columns=['y_pred'])
     result_df = pd.concat([org_df, pred_df], axis=1)
-    
-#    matchCluster(result_df)
-
+       
+   #    matchCluster(result_df)
+   
     accu_array = np.zeros((len(result_df['y'].drop_duplicates()) * len(result_df['y_pred'].drop_duplicates()), 3))
     row_num = 0
     for left_label in result_df['y'].drop_duplicates().tolist():
-        for right_label in result_df['y_pred'].drop_duplicates().tolist():
-#            print(left_label, 
-#                  right_label,
-#                  len(result_df[(result_df['y'] == left_label) & (result_df['y_pred'] == right_label)])
-#                  /len(result_df[(result_df['y'] == left_label)]))
-            accu_array[row_num, 0] = left_label
-            accu_array[row_num, 1] = right_label
-            accu_array[row_num, 2] = len(result_df[(result_df['y'] == left_label) & (result_df['y_pred'] == right_label)])\
-                  /len(result_df[(result_df['y'] == left_label)])
-            row_num += 1
-    
-#    print(np.argmax(accu_array, axis = 1))
+           for right_label in result_df['y_pred'].drop_duplicates().tolist():
+   #            print(left_label, 
+   #                  right_label,
+   #                  len(result_df[(result_df['y'] == left_label) & (result_df['y_pred'] == right_label)])
+   #                  /len(result_df[(result_df['y'] == left_label)]))
+               accu_array[row_num, 0] = left_label
+               accu_array[row_num, 1] = right_label
+               accu_array[row_num, 2] = len(result_df[(result_df['y'] == left_label) & (result_df['y_pred'] == right_label)])\
+                     /len(result_df[(result_df['y'] == left_label)])
+               row_num += 1
+       
+   #    print(np.argmax(accu_array, axis = 1))
     accu_df = pd.DataFrame(accu_array, columns=['num1','num2', 'accu'])
     match_df = accu_df.loc[accu_df.groupby(['num1'])['accu'].idxmax()]#[['num1', 'num2']]
-    print("[match_df]")
-    print(match_df)
-    
+#    print(match_df)
+       
     match_accu = len(result_df.merge(match_df, left_on=['y','y_pred'], right_on = ['num1','num2'], how='inner'))\
-                     /len(result_df)
-    print("[match_accu]",  match_accu)
-    
-    
-#    print(y)
-#    print(y_pred)
-#    for pos in range(len(y)):
-#        print(y[pos], ",", y_pred[pos])
-#        print(np.array(samples_list))
+                        /len(result_df)
+#    print(match_accu)
+       
+       
+   #    print(y)
+   #    print(y_pred)
+   #    for pos in range(len(y)):
+   #        print(y[pos], ",", y_pred[pos])
+   #        print(np.array(samples_list))
+
+
+
+
