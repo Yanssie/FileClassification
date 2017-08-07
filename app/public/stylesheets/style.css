@@ -4,9 +4,11 @@
 }
 
 body {
-  height: 100%;
+  width:100%;
+  height:960px;
   /*background-color: #71AAC7;*/
   background-image: url("../images/bg-1.jpg");
+  background-repeat:no-repeat;
   background-size: cover;
   text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -88,5 +90,27 @@ h2 {
     opacity: 0;
     filter: alpha(opacity=0);
 }
+.next-button {
+  margin-top: 60px;
+  float: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4px;
+  transition: all .2s linear;
+}
+.next-button:hover {
+  padding:3px;
+}
+.next-text {
+  color: #EDEEF1;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: lighter;
+}
+.glyphicon-menu-right {
+  background-color: #EDEEF1;
+  margin-left: 25px;
+}
+
 
 

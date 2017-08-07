@@ -75,18 +75,21 @@ function extract_features(res, req) {
                     vectors = vectors.replace(']]', ']')
                     vectors = vectors.replace(/],/g, ']],')
                     vectors = vectors.split('], ')
+
+                    pred_result = results[3]
+                    pred_result = pred_result.split(' ')
                     console.log("finished extracting features!")
-                    upload_features(res, req, feature_names, vectors);
+                    upload_features(res, req, feature_names, vectors, pred_result);
                 });
             } catch(ex) {
 
             }
 }
 
-function upload_features(res, req, feature_names, vectors) {
+function upload_features(res, req, feature_names, vectors, pred_result) {
     query = ""
     for (i=0; i<feature_names.length; i++) {
-        query += "insert into features values(" + feature_names[i].substring(0, feature_names[i].length-10) + "','" + vectors[i] + "');"
+        query += "insert into features values(" + feature_names[i].substring(0, feature_names[i].length-10) + "','" + vectors[i] + "','" + pred_result[i] + "');"
     }
     pool.query(query, function(err, result) {
         if(err) {

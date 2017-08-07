@@ -323,7 +323,6 @@ if __name__ == '__main__':
            accuracy_list.append(np.mean(fold_accu))
 #           
 #    print(accuracy_list)
-       
     plt.figure(1)
     plt.plot(param_list, accuracy_list)     
        
@@ -331,6 +330,7 @@ if __name__ == '__main__':
            
     km = KMeans(n_clusters = 3, init='k-means++').fit(X)
     y_pred = km.predict(X)
+    print(*y_pred)
        
     org_df = pd.DataFrame(y, columns=['y'])
     pred_df = pd.DataFrame(y_pred, columns=['y_pred'])
@@ -355,11 +355,11 @@ if __name__ == '__main__':
    #    print(np.argmax(accu_array, axis = 1))
     accu_df = pd.DataFrame(accu_array, columns=['num1','num2', 'accu'])
     match_df = accu_df.loc[accu_df.groupby(['num1'])['accu'].idxmax()]#[['num1', 'num2']]
-#    print(match_df)
+    print(match_df)
        
     match_accu = len(result_df.merge(match_df, left_on=['y','y_pred'], right_on = ['num1','num2'], how='inner'))\
                         /len(result_df)
-#    print(match_accu)
+    print(match_accu)
        
        
    #    print(y)

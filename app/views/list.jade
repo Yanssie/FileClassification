@@ -9,7 +9,11 @@ block content
           .panel-body
             .pull-right
               form(method='post', action='/list')
-                button(class='btn btn-warning btn-lg cluster-btn', type='submit') Cluster
+                //a.cluster-link(href='#clusterModal',data-toggle="modal")
+                button(class='btn btn-warning btn-lg cluster-btn', type='submit', data-toggle="modal" data-target="#clusterModal") Cluster
+                +modal("cluster result", "clusterModal")
+                  p
+                    +img-thumbnail("images/cluster-accu.png","cluster-image")
               //form(method='post', action='/list')
               //  .btn.btn-lg.btn-warning.cluster-btn(type='Submit') Cluster
               
@@ -48,5 +52,5 @@ block content
                         //+modal(name, "jsonModal")
                         //  p
                         //    | #{json_data}
-  //script(src="/../javascripts/list_file.js")
+  script(src="/../javascripts/list_file.js")
 

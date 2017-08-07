@@ -1,14 +1,12 @@
 
 extend layout
 
-block navbarcontent
-
 block content
   .row
-    .container
+    .col-sm-8.col-sm-offset-2
       .panel.panel-default
-        .panel-body 
-          span.glyphicon.glyphicon-cloud-upload
+         .panel-body 
+           span.glyphicon.glyphicon-cloud-upload
           h2 XML File Uploader
           .progress
             .progress-bar(role='progressbar')
@@ -17,6 +15,15 @@ block content
               input#upload-input.inputfile(type='file', name='uploads[]', accept='text/xml', multiple="multiple")
             button.btn.btn-lg.upload-btn(type='Submit') Upload File
           h4 #{error}
+    .col-sm-1.sidebar-next
+      a.next-button(href='/list')
+        .row
+          .col-sm-1
+            h5.next-text Next
+          .col-sm-1
+            &nbsp
+            &nbsp
+            span.glyphicon.glyphicon-menu-right
 
   script(src='https://code.jquery.com/jquery-2.2.0.min.js')
   script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
