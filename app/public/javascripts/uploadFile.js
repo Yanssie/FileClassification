@@ -1,4 +1,13 @@
-
+$body = $("body");
+// $(document).ready(function(){
+//     $(document).on({
+//       ajaxStart: function() { $body.addClass("loading");    },
+//       ajaxStop: function() { $body.removeClass("loading"); }    
+//     });
+//     $(".next-button").on("click", function(){
+//         window.location = '/list';
+//     });
+// });
 
 $('.fileUpload').on('click', function (){
     $('.progress-bar').text('0%');
@@ -50,8 +59,11 @@ $('#upload-input').on('change', function(){
             if (percentComplete === 100) {
               $('.progress-bar').html('Done');
               $(document).ready(function(){
-              // window.location = '/list';
-              }
+                $(".next-button").on("click", function(){
+                  $body.addClass("loading");
+                  window.location = '/list';
+                });
+              })
             }
 
           }

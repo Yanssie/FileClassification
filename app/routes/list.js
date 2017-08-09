@@ -106,6 +106,7 @@ function upload_features(res, req, feature_names, vectors, pred_result) {
         }
 
     });
+    res.redirect('cluster');
 }
 
 function delete_files() {

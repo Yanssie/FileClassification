@@ -1,0 +1,36 @@
+extend layout
+
+block content
+  .row
+    .col-md-8.col-md-offset-2
+        .panel.panel-default
+          .panel-body
+            .pull-right
+              .btn-group
+                button.btn.btn-success.btn-filter(type='button', data-target='cluster1') Cluster I
+                button.btn.btn-warning.btn-filter(type='button', data-target='cluster2') Cluster II
+                button.btn.btn-danger.btn-filter(type='button', data-target='cluster3') Cluster III
+
+            .table-container
+              table.table.table-filter
+                tbody
+                  - for (var i = 0; i < cluster1.length; i++)
+                    tr(data-status='cluster1')
+                      td
+                        a.ajax-link(href='#Modal',data-toggle='modal') #{cluster1[i]}
+                  - for (var j = 0; j < cluster2.length; j++)
+                    tr(data-status='cluster2')
+                      td
+                        a.ajax-link(href='#Modal',data-toggle='modal') #{cluster2[j]}
+                  - for (var k = 0; k < cluster3.length; k++)
+                    tr(data-status='cluster3')
+                      td
+                        a.ajax-link(href='#Modal',data-toggle='modal') #{cluster3[k]}
+            +modal("APG", "Modal")
+              h5.jcontent
+
+
+  script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+  script(src="/../javascripts/cluster.js")
+

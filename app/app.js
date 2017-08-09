@@ -18,6 +18,7 @@ var list_json = require('./routes/list_json');
 var show_json = require('./routes/show_json');
 var show_xml = require('./routes/show_xml');
 var upload_json = require('./routes/upload_json');
+var cluster = require('./routes/cluster');
 
 var app = express();
 
@@ -46,6 +47,10 @@ app.get('/list_json', list_json.do_work);
 app.get('/show_json/:name', show_json.do_work);
 app.get('/show_xml/:name', show_xml.do_work);
 app.get('/upload_json', upload_json.do_work);
+app.get('/cluster', cluster.do_work);
+app.get('/ajax_get_json', cluster.ajax_work);
+
+
 app.post('/list', list.do_work_post);
 
 const pool = require('./models/db');
