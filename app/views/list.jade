@@ -14,11 +14,6 @@ block content
                 //    +img-thumbnail("images/cluster-accu.png","cluster-image")
               //form(method='post', action='/list')
               //  .btn.btn-lg.btn-warning.cluster-btn(type='Submit') Cluster
-              
-              .btn-group
-                //button.btn.btn-success.btn-filter(type='button', data-target='cluster1') Cluster1
-                //button.btn.btn-warning.btn-filter(type='button', data-target='cluster2') Cluster2
-                //button.btn.btn-danger.btn-filter(type='button', data-target='cluster3') Cluster3
             .table-container
               table.table.table-filter
                 thead
@@ -38,18 +33,24 @@ block content
                       td=name
                       td
                         //.media
-                        a.pull-left(href='/show_xml/' + rows[i].name) XML
-                        //a.pull-left.xml_header(href='#xmlModal',data-toggle="modal") XML
-                        //+modal(names.pop(), "xmlModal")
-                        //  p
-                        //    | #{xml_data}
+                        //a.pull-left(href='/show_xml/' + rows[i].name) XML
+                        a.pull-left.xml-link(name=name, href='#Modal',data-toggle='modal') XML
                       td
                         //.media
-                        a.pull-left(href='/show_json/' + rows[i].name) JSON
-                        //a.pull-left.json_header(href='#jsonModal',data-toggle="modal") JSON
+                        //a.pull-left(href='/show_json/' + rows[i].name) JSON
+                        a.pull-left.json-link(name=name,href='#Modal',data-toggle="modal") JSON
                         //+modal(name, "jsonModal")
                         //  p
                         //    | #{json_data}
+
+                    +modal("Original Graph", "Modal")
+                      .pull-right
+                        .btn-group
+                          button.btn.btn-success.xml-button(type='button',name=name) Original
+                          button.btn.btn-warning.json-button(type='button',name=name) APG
+                      
+                      h5.xmlcontent
+                      h5.jsoncontent
   .modal.modal-loading
 
   script(src='https://code.jquery.com/jquery-2.2.0.min.js')

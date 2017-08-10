@@ -19,6 +19,7 @@ var show_json = require('./routes/show_json');
 var show_xml = require('./routes/show_xml');
 var upload_json = require('./routes/upload_json');
 var cluster = require('./routes/cluster');
+var ajaxRoute = require('./routes/ajaxRoute');
 
 var app = express();
 
@@ -45,10 +46,11 @@ app.get('/list', list.do_work);
 app.get('/list_xml', list_xml.do_work);
 app.get('/list_json', list_json.do_work);
 app.get('/show_json/:name', show_json.do_work);
-app.get('/show_xml/:name', show_xml.do_work);
+// app.get('/show_xml/:name', show_xml.do_work);
 app.get('/upload_json', upload_json.do_work);
 app.get('/cluster', cluster.do_work);
-app.get('/ajax_get_json', cluster.ajax_work);
+app.get('/ajax_get_xml', ajaxRoute.get_xml);
+app.get('/ajax_get_json', ajaxRoute.get_json);
 
 
 app.post('/list', list.do_work_post);
