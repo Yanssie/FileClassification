@@ -2,20 +2,24 @@ extend layout
 
 block content
   .row
-    .col-md-8.col-md-offset-2
+    .col.col-md-8.col-md-offset-2
         .panel.panel-default
           .panel-body
-            .pull-right
-              form(method='post', action='/list')
+            nav.navbar.navbar-expand-lg.navbar-light.bg-light
+              .pull-right
+                form(method='post', action='/list')
+                  button.btn.btn-warning.btn-lg.cluster-btn(type='submit') Cluster
+              //.pull-right
+                //  form(method='post', action='/list')
                 //a.cluster-link(href='#clusterModal',data-toggle="modal")
-                button.btn.btn-warning.btn-lg.cluster-btn(type='submit') Cluster
+                //  button.btn.btn-warning.btn-lg.cluster-btn(type='submit') Cluster
                 //+modal("cluster result", "clusterModal")
                 //  p
                 //    +img-thumbnail("images/cluster-accu.png","cluster-image")
               //form(method='post', action='/list')
               //  .btn.btn-lg.btn-warning.cluster-btn(type='Submit') Cluster
             .table-container
-              table.table.table-filter
+              table.table.table-striped.table-bordered
                 thead
                   tr: th &nbsp;
                       th File Name

@@ -51,6 +51,7 @@ app.get('/upload_json', upload_json.do_work);
 app.get('/cluster', cluster.do_work);
 app.get('/ajax_get_xml', ajaxRoute.get_xml);
 app.get('/ajax_get_json', ajaxRoute.get_json);
+app.get('/ajax_get_feature', ajaxRoute.get_feature);
 
 
 app.post('/list', list.do_work_post);
