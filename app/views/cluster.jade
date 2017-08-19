@@ -35,6 +35,9 @@ block content
               .bottom-anchor
             +modal("Visualization", "myModal")
               svg(width='960', height='600')
+              #pop-up
+                #pop-up-title
+                #pop-up-content
             +modal("APG", "Modal")
               div.jcontent
 
@@ -45,6 +48,12 @@ block content
   script(src="/../javascripts/cluster.js")
 
   script.
+
+    $(document).ready(function () {
+
+    $('.btn-secondary').click();
+
+    });
 
     $('.ajax-link').on('click', function () {
 

@@ -42,6 +42,7 @@ $(document).ready(function () {
             width = +svg.attr("width"),
             height = +svg.attr("height");
         svg.selectAll("*").remove();
+        $("#pop-up").hide();
 
         var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -120,6 +121,30 @@ console.log(graph.nodes)
 
           node.append("title")
               .text(function(d) { return d.id; });
+
+          node.on("click", function(d) {
+            if(d.id != "cluster1" && d.id != "cluster2" && d.id != "cluster3") {
+
+              var params = { name: d.id };
+              $.get( '/ajax_get_json',params, function(data) {
+                  console.log("clicking" + d.id);
+                  $("#pop-up").fadeOut(100,function () {
+                  // Popup content
+                    $("#pop-up-title").html(d.id);
+                    $("#pop-up-content").html(JSON.stringify(data));
+
+                  // Popup position
+                    var popLeft = 10;
+                    var popTop = 500;
+                    $("#pop-up").css({"left":popLeft,"top":popTop});
+                    $("#pop-up").fadeIn(100);
+                  });
+
+              }); 
+
+            }
+
+          });
 
           simulation
               .nodes(graph.nodes)
